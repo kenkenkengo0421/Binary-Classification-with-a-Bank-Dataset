@@ -9,6 +9,7 @@
 ### 評価
 提出されたデータは、予測値と観測された目標値との間の ROC曲線下面積（AUC）を用いて評価されます。
 
+[機械学習における評価プロセス（ROC-AUC）のまとめ](https://github.com/kenkenkengo0421/Binary-Classification-with-a-Bank-Dataset/blob/main/memo.md)
 
 ### 提出
 テストセットの各項目についてid、バイナリターゲットの確率を予測する必要がありますy。ファイルにはヘッダーが含まれ、以下の形式である必要があります。
@@ -24,7 +25,7 @@ etc.
 ### データ項目
 過去の定期預金キャンペーンデータ<br>
 
-[train.csv](https://www.kaggle.com/competitions/sch2-reg-2026-d4-2/data?select=train.csv)
+
 
 ```
 id       :int64	    各行を識別する一意の番号（学習には不要）。
@@ -52,6 +53,10 @@ id       :int64	    各行を識別する一意の番号（学習には不要）
 ------------------
 y:int64	            目的変数。 定期預金を申し込んだかどうか（1: はい、0: いいえ）。
 ```
+
+[train.csv  kaggle公式分析ページ](https://www.kaggle.com/competitions/sch2-reg-2026-d4-2/data?select=train.csv)
+
+
 <br>
 <br>
 <br>
@@ -98,3 +103,6 @@ jupyter lab
 
 >V0.2 roc-auc :0.7515724085199316  5,6,7,8のみ<br>
 > kaggleスコア :0.74812<br>
+
+>V0.3 roc-auc :  0.841403093714189 12 durationのみ削除<br>
+> kaggleスコア :0.84026<br>
