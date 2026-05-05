@@ -29,26 +29,26 @@ etc.
 ```
 id       :int64	    各行を識別する一意の番号（学習には不要）。
 ------------------
-age      :int64	    顧客の年齢。 
-job      :object	職業（admin, blue-collar, technician など）。　
-marital  :object	既婚・未婚などの婚姻状況。　
-education:object	学歴（primary, secondary, tertiary など）
+1) age      :int64	    顧客の年齢。 
+2) job      :object	職業（admin, blue-collar, technician など）。　
+3) marital  :object	既婚・未婚などの婚姻状況。　
+4) education:object	学歴（primary, secondary, tertiary など）
                     ※primary: 初等教育（小学校など）
                      secondary: 中等教育（中学校・高校など）
                      tertiary: 高等教育（大学・大学院など）
                      unknown: 不明
-default  :object	債務不履行があるかどうか（yes / no）　過去にローンやクレジットカードの支払いが滞ったことがあるか
-balance  :int64	    年間の平均残高。
-housing  :object	住宅ローンがあるかどうか（yes / no）。
-loan     :object	個人ローンがあるかどうか（yes / no）
-contact  :object	連絡手段（cellular（スマホ）, telephone （固定）など）。
-day      :int64	    最終接触日の「日」。
-month    :object	最終接触日の「月」。
-duration :int64	    最後の電話営業通話時間（秒）。※予測時には注意が必要
-campaign :int64     このキャンペーン（勧誘）期間中の接触回数。
-pdays    :int64	    前回のキャンペーン（勧誘）接触から経過した日数（-1は未接触）。
-previous :int64	    このキャンペーン（勧誘）以前の接触回数。
-poutcome :object	前回のキャンペーン（勧誘）の成果（success(契約してくれた), failure(断られた) など）。
+5) default  :object	債務不履行があるかどうか（yes / no）　過去にローンやクレジットカードの支払いが滞ったことがあるか
+6) balance  :int64	    年間の平均残高。
+7) housing  :object	住宅ローンがあるかどうか（yes / no）。
+8) loan     :object	個人ローンがあるかどうか（yes / no）
+9) contact  :object	連絡手段（cellular（スマホ）, telephone （固定）など）。
+10) day      :int64	    最終接触日の「日」。
+11) month    :object	最終接触日の「月」。
+12) duration :int64	    最後の電話営業通話時間（秒）。※予測時には注意が必要
+13) campaign :int64     このキャンペーン（勧誘）期間中の接触回数。
+14) pdays    :int64	    前回のキャンペーン（勧誘）接触から経過した日数（-1は未接触）。
+15) previous :int64	    このキャンペーン（勧誘）以前の接触回数。
+16) poutcome :object	前回のキャンペーン（勧誘）の成果（success(契約してくれた), failure(断られた) など）。
 ------------------
 y:int64	            目的変数。 定期預金を申し込んだかどうか（1: はい、0: いいえ）。
 ```
@@ -88,3 +88,7 @@ jupyter lab
 ```
 
 <br>
+
+>## 記録
+>
+V0.0 roc-auc :  0.9610978699150123　1-16全部乗せ
