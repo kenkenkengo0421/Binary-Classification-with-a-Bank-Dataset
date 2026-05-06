@@ -127,7 +127,9 @@ jupyter lab
 
 >V0.4 roc-auc :  0.8418812223868644 1-16, 12削除,　<br>
 >kaggleスコア :0.84043<br>
->* 17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。　<br>
->* 18) balance_per_age：float64　年齢に対する残高の比率　<br>
->* 19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。　<br>
->* 20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定　<br>
+>追加column
+>
+>17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。　<br>
+>18) balance_per_age：float64　年齢に対する残高の比率　<br>
+>19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。　<br>
+>20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定　<br>
