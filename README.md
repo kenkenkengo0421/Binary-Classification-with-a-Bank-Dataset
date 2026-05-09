@@ -133,3 +133,17 @@ jupyter lab
 >18) balance_per_age：float64　年齢に対する残高の比率　<br>
 >19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。　<br>
 >20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定　<br>
+
+>V0.5 roc-auc :  0.8421719373317439  1-16, 12削除,　<br>
+>kaggleスコア :0.84065<br>
+>17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。　<br>
+>18) balance_per_age：float64　年齢に対する残高の比率　<br>
+>19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。　<br>
+>20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定　<br>
+>　<br>
+>追加column　<br>
+>21) pdays_is_contacted： 過去に一度でも接触したことがあるか　<br>
+>22) balance_is_negative： 残高がマイナス（借金状態）かどうか　<br>
+>23) job_category_quality： 安定収入層（management, technician, admin.）判定　<br>
+>24) is_peak_campaign_month： キャンペーン集中月（5, 6, 7, 8月など）判定　<br>
+>25) age_bin_senior： 60歳以上の高齢層（退職金期待層）判定　<br>
