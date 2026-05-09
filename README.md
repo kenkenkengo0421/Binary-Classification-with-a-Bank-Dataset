@@ -113,37 +113,60 @@ jupyter lab
 <br>
 
 ># 記録
->
->V0.0 roc-auc :0.9610978699150123　1-16全部乗せ<br>
 
->V0.1 roc-auc :0.7164416803000848  1,2,4,13,16のみ<br>
-> kaggleスコア :0.71797<br>
+```
 
->V0.2 roc-auc :0.7515724085199316  5,6,7,8のみ<br>
-> kaggleスコア :0.74812<br>
+V0.0
+roc-auc :0.9610978699150123　1-16全部乗せ
 
->V0.3 roc-auc :  0.841403093714189 12 durationのみ削除<br>
-> kaggleスコア :0.84026<br>
+----
 
->V0.4 roc-auc :  0.8418812223868644 1-16, 12削除,　<br>
->kaggleスコア :0.84043<br>
->追加column
->
->17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。　<br>
->18) balance_per_age：float64　年齢に対する残高の比率　<br>
->19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。　<br>
->20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定　<br>
+V0.1
+roc-auc :0.7164416803000848  1,2,4,13,16のみ
+kaggleスコア :0.71797
 
->V0.5 roc-auc :  0.8421719373317439  1-16, 12削除,　<br>
->kaggleスコア :0.84065<br>
->17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。　<br>
->18) balance_per_age：float64　年齢に対する残高の比率　<br>
->19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。　<br>
->20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定　<br>
->　<br>
->追加column　<br>
->21) pdays_is_contacted： 過去に一度でも接触したことがあるか　<br>
->22) balance_is_negative： 残高がマイナス（借金状態）かどうか　<br>
->23) job_category_quality： 安定収入層（management, technician, admin.）判定　<br>
->24) is_peak_campaign_month： キャンペーン集中月（5, 6, 7, 8月など）判定　<br>
->25) age_bin_senior： 60歳以上の高齢層（退職金期待層）判定　<br>
+----
+
+V0.2
+roc-auc :0.7515724085199316  5,6,7,8のみ
+kaggleスコア :0.74812
+
+----
+
+V0.3
+roc-auc :  0.841403093714189 12 durationのみ削除
+kaggleスコア :0.84026
+
+----
+
+V0.4
+roc-auc :  0.8418812223868644 1-16, 12削除
+kaggleスコア :0.84043
+
+追加column
+
+17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）
+18) balance_per_age：float64　年齢に対する残高の比率
+19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。
+20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定
+
+----
+
+V0.5
+roc-auc :  0.8421719373317439  1-16, 12削除,
+kaggleスコア :0.84065
+
+17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。
+18) balance_per_age：float64　年齢に対する残高の比率
+19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。
+20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定
+
+追加column
+
+21) pdays_is_contacted： 過去に一度でも接触したことがあるか
+22) balance_is_negative： 残高がマイナス（借金状態）かどうか
+23) job_category_quality： 安定収入層（management, technician, admin.）判定
+24) is_peak_campaign_month： キャンペーン集中月（5, 6, 7, 8月など）判定
+25) age_bin_senior： 60歳以上の高齢層（退職金期待層）判定
+
+```
