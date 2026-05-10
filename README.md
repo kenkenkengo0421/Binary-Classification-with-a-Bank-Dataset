@@ -173,4 +173,32 @@ kaggleスコア :0.84065
 24) is_peak_campaign_month： キャンペーン集中月（5, 6, 7, 8月など）判定
 25) age_bin_senior： 60歳以上の高齢層（退職金期待層）判定
 
+----
+
+V0.6
+roc-auc :  0.8524207108450856  1-16, 12削除,
+kaggleスコア :0.85180
+
+17) total_loan_count：int64　housingとloanの「yes」の合計数（負債の重さ）。
+18) balance_per_age：float64　年齢に対する残高の比率
+19) is_new_prospect：int64　previousが0かつpdaysが-1の完全新規フラグ。
+20) day_month_interaction：int64　月と日の組み合わせによるボーナス・決算期特定
+21) pdays_is_contacted： 過去に一度でも接触したことがあるか
+22) balance_is_negative： 残高がマイナス（借金状態）かどうか
+23) job_category_quality： 安定収入層（management, technician, admin.）判定
+24) is_peak_campaign_month： キャンペーン集中月（5, 6, 7, 8月など）判定
+25) age_bin_senior： 60歳以上の高齢層（退職金期待層）判定
+
+追加column
+
+26) is_student: 職業が学生であるかどうか
+27) is_telephone_contact: 連絡手段が固定電話であるかどうか（特定の生活様式や年齢層の絞り込み）
+28) poutcome_success_flag: 前回のキャンペーン成果が「成功」であったか
+29) poutcome_failure_flag: 前回のキャンペーン成果が「失敗」であったか
+30) age_bin_young: 25歳未満の若年層であるか
+
+LightGBMの学習回数を100 => 500に変更
+
+----
+
 ```
